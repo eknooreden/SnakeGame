@@ -1,8 +1,9 @@
 from turtle import Turtle
+import os
+
 ALIGNMENT = "center"
 FONT = ("luckiest guy", 24, "normal")
-
-DATA_FILE_PATH = "/Users/eknoorsingheden/Documents/data.txt"
+DATA_FILE_PATH = f"/Users/{os.getenv('USER')}/Documents/data.txt"
 
 class Scoreboard(Turtle):
     def __init__(self):
